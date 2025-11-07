@@ -29,7 +29,7 @@ jobs:
       - name: Build and Push Backend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./final-ansible
+          context: ./backend
           file: ./backend/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-blood-backend:latest
@@ -38,7 +38,7 @@ jobs:
       - name: Build and Push Frontend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./final-ansible
+          context: ./blood-bank
           file: ./blood-bank/frontend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-blood-frontend:latest
