@@ -1,0 +1,157 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1b1b2f, #0f0f1a);
+  margin: 0;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #39ff14; 
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.donor-form {
+  background: #2b2b3f;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(57, 255, 20, 0.4); 
+  width: 320px;
+}
+
+.donor-form h2 {
+  color: #39ff14;
+  margin-bottom: 1rem;
+}
+
+.donor-form input,
+.donor-form select,
+.donor-form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: #1e1e2f;
+  color: #e0e0e0;
+}
+
+.donor-form textarea {
+  resize: vertical;
+}
+
+.btn-primary {
+  background: #39ff14;
+  color: #0f0f1a;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #39ff14;
+}
+
+.btn-primary:hover {
+  background: #32e60f;
+  box-shadow: 0 0 20px #32e60f;
+}
+
+.btn-secondary {
+  background: #444;
+  color: #ddd;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #555;
+}
+
+.donor-list {
+  background: #2b2b3f;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(57, 255, 20, 0.4);
+  width: 100%;
+  max-width: 900px;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+th {
+  color: #39ff14;
+}
+
+.btn-edit, .btn-delete {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 6px;
+  margin: 2px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-edit {
+  background: #ff6eff;
+  color: #0f0f1a;
+  box-shadow: 0 0 8px #ff6eff;
+}
+
+.btn-edit:hover {
+  background: #e55bff;
+  box-shadow: 0 0 12px #e55bff;
+}
+
+.btn-delete {
+  background: #ff355e;
+  color: #0f0f1a;
+  box-shadow: 0 0 8px #ff355e;
+}
+
+.btn-delete:hover {
+  background: #e63250;
+  box-shadow: 0 0 12px #e63250;
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donor-list {
+    width: 100%;
+  }
+}

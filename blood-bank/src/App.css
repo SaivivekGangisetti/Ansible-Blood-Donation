@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #e63946;
+  margin-bottom: 30px;
+}
+
+.donation-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.donation-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.donation-form input:focus {
+  border-color: #e63946;
+  box-shadow: 0 0 5px rgba(230,57,70,0.5);
+}
+
+.donation-form button {
+  padding: 10px 20px;
+  border: none;
+  background: #e63946;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.donation-form button:hover {
+  background: #d62828;
+}
+
+.donation-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.donation-list th, .donation-list td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.donation-list th {
+  background: #f8f8f8;
+}
+
+.donation-list button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.donation-list button:first-child {
+  background: #0077b6;
+}
+
+.donation-list button:first-child:hover {
+  background: #023e8a;
+}
+
+.donation-list button:last-child {
+  background: #e63946;
+}
+
+.donation-list button:last-child:hover {
+  background: #d62828;
+}
